@@ -31,7 +31,7 @@
         </button>
       </div>
       <div class="header__bottom flex">
-        <a class="logo header-bottom__logo">
+        <a class="logo header__bottom-logo">
           <img src="./src/img/logo.svg" alt="Логотип" class="logo__img">
         </a>
         <nav class="nav flex">
@@ -43,7 +43,7 @@
             <li class="nav__item"><a href="#projects" class="nav__link">Проекты</a></li>
             <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
           </ul>
-          <button class="btn-reset header__btn header-bottom__btn">
+          <button class="btn-reset header__btn header__bottom-btn">
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="8.79564" height="2.19891"
                 transform="matrix(-0.711314 0.702874 0.711314 0.702874 6.25647 20.2722)" fill="currentColor" />
@@ -55,6 +55,7 @@
         </nav>
 
       </div>
+    </div>
   </header>
 
   <main class="main">
@@ -72,8 +73,8 @@
     </section>
     <section class="about" id="about">
       <div class="container">
-        <h2 class="section__title about__title">О&nbsp;нас</h2>
-        <p class="section__descr about__descr">Ясность нашей позиции очевидна: семантический разбор внешних
+        <h2 class="section-title about__title">О&nbsp;нас</h2>
+        <p class="section-descr about__descr">Ясность нашей позиции очевидна: семантический разбор внешних
           противодействий однозначно
           определяет каждого участника как
           способного принимать собственные решения касаемо распределения внутренних резервов и&nbsp;ресурсов.
@@ -91,23 +92,23 @@
     </section>
     <section class="gallery" id="gallery">
       <div class="container">
-        <h2 class="section__title gallery__title">Галерея</h2>
+        <h2 class="section-title gallery__title">Галерея</h2>
         <div class="gallery__content">
-          <div class="gallery-checkbox__wrapper flex">
+          <div class="gallery__wrapper flex">
             <label class="gallery-checkbox">
-              <input type="checkbox" name="" class="gallery-checkbox__input" id="">
+              <input type="checkbox" name="centures" class="gallery-checkbox__input" id="XIX century">
               <span class="gallery-checkbox__text">
                 XIX век
               </span>
             </label>
             <label class="gallery-checkbox">
-              <input type="checkbox" name="" class="gallery-checkbox__input" id="">
+              <input type="checkbox" name="centures" class="gallery-checkbox__input" id="XX century">
               <span class="gallery-checkbox__text">
                 XX век
               </span>
             </label>
             <label class="gallery-checkbox">
-              <input type="checkbox" name="" class="gallery-checkbox__input" id="">
+              <input type="checkbox" name="centures" class="gallery-checkbox__input" id="modernity">
               <span class="gallery-checkbox__text">
                 Современность
               </span>
@@ -147,8 +148,8 @@
     </section>
     <section class="catalog" id="catalog">
       <div class="container">
-        <h2 class="section__title catalog__title">Каталог</h2>
-        <p class="section__descr catalog__descr">
+        <h2 class="section-title catalog__title">Каталог</h2>
+        <p class="section-descr catalog__descr">
           Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
           политической
           культуры, будут объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали. Являясь всего лишь частью
@@ -242,7 +243,7 @@
     </section>
     <section class="events" id="events">
       <div class="container">
-        <h2 class="section__title events__title">
+        <h2 class="section-title events__title">
           События
         </h2>
         <ul class="list-reset events__list flex">
@@ -316,8 +317,8 @@
     </section>
     <section class="projects" id="projects">
       <div class="container">
-        <h2 class="section__title projects__title">Проекты</h2>
-        <p class="section__descr projects__descr">Предварительные выводы: постоянное информационно-пропагандистское
+        <h2 class="section-title projects__title">Проекты</h2>
+        <p class="section-descr projects__descr">Предварительные выводы: постоянное информационно-пропагандистское
           обеспечение нашей деятельности однозначно фиксирует
           необходимость своевременного выполнения сверхзадачи. А&nbsp;ещё независимые государства смешаны
           с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости, из-за чего возрастает
@@ -350,23 +351,23 @@
     <section class="contacts" id="contacts">
       <div class="container contacts__container">
         <div class="contacts-address">
-          <h2 class="section__title contacts__title">Шоурум № 4</h2>
+          <h2 class="section-title contacts__title">Шоурум № 4</h2>
           <p class="contacts__descr">Леонтьевский переулок, дом 5/1</p>
         </div>
-        <form class="contacts__form flex" action="">
+        <form class="contacts__form flex">
           <div class="contacts__wrapper flex">
-            <input class="contacts__input contacts-name__input" type="text" placeholder="Имя*">
-            <input class="contacts__input contacts-tel__input" type="tel" placeholder="Телефон*">
+            <input class="contacts__input contacts__input-name" type="text" placeholder="Имя*">
+            <input class="contacts__input contacts__input-tel" type="tel" placeholder="Телефон*">
           </div>
           <button type="submit" class="btn-reset contacts__btn">Заказать <span
-              class="contacts-btn__text-hidden">обратный
+              class="contacts__btn-hidden-text">обратный
               звонок</span></button>
         </form>
         <div class="contacts-social">
           <h3 class="contacts__subtitle">Связаться в&nbsp;один клик</h3>
           <ul class="list-reset flex contacts__list">
             <li class="contacts__item">
-              <a href="#" class="contacts__link contacts-whatsapp__link">
+              <a href="#" class="contacts__link contacts__link-whatsapp">
                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" aria-label="Whatsapp-Icon"
                   xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_191243_1048)">
@@ -386,7 +387,7 @@
               </a>
             </li>
             <li class="contacts__item">
-              <a href="#" class="contacts__link contacts-telegram__link">
+              <a href="#" class="contacts__link contacts__link-telegram">
                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" aria-label="Telegram-Icon"
                   xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_191243_1051)">

@@ -16,30 +16,30 @@
 
 /*Fonts*/
 @font-face {
-  font-family: 'Open Sans';
-  src: local('OpenSans-Regular'),
-    url('../fonts/OpenSans-Regular.woff2') format('woff2'),
-    url('../fonts/OpenSans-Regular.woff') format('woff');
+  font-family: "Open Sans";
+  src: local("OpenSans-Regular"),
+    url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: local('OpenSans-SemiBold'),
-    url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
-    url('../fonts/OpenSans-SemiBold.woff') format('woff');
+  font-family: "Open Sans";
+  src: local("OpenSans-SemiBold"),
+    url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/OpenSans-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: local('OpenSans-Bold'),
-    url('../fonts/OpenSans-Bold.woff2') format('woff2'),
-    url('../fonts/OpenSans-Bold.woff') format('woff');
+  font-family: "Open Sans";
+  src: local("OpenSans-Bold"),
+    url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -50,11 +50,13 @@
 .page {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 28px;
 }
+
 html {
   box-sizing: border-box;
 }
@@ -104,7 +106,7 @@ a {
   display: flex;
 }
 
-.section__title {
+.section-title {
   margin: 0;
   padding: 0;
   font-weight: 400;
@@ -118,10 +120,10 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  background-color: var(--color--black);
   padding-top: 16px;
   padding-bottom: 6px;
+  width: 100%;
+  background-color: var(--color--black);
 }
 
 .header__top {
@@ -157,6 +159,7 @@ a {
   font-size: 12px;
   line-height: 16px;
   color: #fff;
+
   transition: color 0.5s, background-color 0.5s;
 }
 
@@ -194,11 +197,11 @@ a {
   background-color: var(--color--black);
 }
 
-.header-bottom__logo {
+.header__bottom-logo {
   display: none;
 }
 
-.header-bottom__btn {
+.header__bottom-btn {
   display: none;
 }
 
@@ -206,7 +209,7 @@ a {
 
 .hero {
   padding: 128px 0 50px;
-  background-image: url('../img/hero_section/bg_mob.png');
+  background-image: url("../img/hero_section/bg_mob.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -222,9 +225,10 @@ a {
   text-align: center;
 }
 .hero__title {
-  margin: 0;
   padding: 0;
+  margin: 0;
   margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 32px;
   line-height: 28px;
@@ -233,6 +237,7 @@ a {
 .hero__descr {
   margin-bottom: 40px;
   max-width: 85%;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -240,12 +245,14 @@ a {
 }
 .hero__btn {
   padding: 12px 19px;
+  border-radius: 100px;
+
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
   color: #fff;
+
   background-color: var(--color--purple);
-  border-radius: 100px;
   transition: background-color 0.5s, outline 0.5s;
 }
 
@@ -283,17 +290,17 @@ a {
 
 .gallery {
   padding: 50px 0 41px;
-  background-image: url('../img/gallery_section/bg-mob.png');
+  background-image: url("../img/gallery_section/bg-mob.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .gallery__title {
-  color: #fff;
   margin-bottom: 12px;
+  color: #fff;
 }
 
-.gallery-checkbox__wrapper {
+.gallery__wrapper {
   flex-direction: column;
   margin-bottom: 30px;
 }
@@ -315,35 +322,35 @@ a {
   border-color: var(--color--dark-pink);
 }
 .gallery-checkbox__text {
+  position: relative;
   padding-left: 24px;
   font-size: 16px;
   line-height: 32px;
-  position: relative;
   color: #fff;
 }
 
 .gallery-checkbox__text::before {
-  content: '';
-  width: 12px;
-  height: 12px;
+  content: "";
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
   border: 1px solid #fff;
+  transform: translateY(-50%);
   transition: background-color 0.3s;
 }
 
 .gallery-checkbox__text::after {
-  content: '';
-  width: 4px;
-  height: 4px;
+  content: "";
   position: absolute;
   top: 50%;
   left: 4px;
-  transform: translateY(-50%);
   border-radius: 100%;
+  width: 4px;
+  height: 4px;
   background-color: var(--color--dark-pink);
+  transform: translateY(-50%);
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -408,8 +415,8 @@ a {
   line-height: 33px;
 }
 .catalog-card__years {
-  margin-bottom: 14px;
   display: inline-block;
+  margin-bottom: 14px;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -442,9 +449,9 @@ a {
   margin-bottom: 18px;
 }
 .events-card__content {
-  padding: 0 18px 48px 23px;
   flex-direction: column;
   align-items: baseline;
+  padding: 0 18px 48px 23px;
 }
 .events-card__wrapper {
   margin-bottom: 8px;
@@ -470,17 +477,17 @@ a {
   line-height: 32px;
 }
 .events-card__link {
-  outline: none;
-  display: inline-block;
   position: relative;
-  transform: translateX(6px);
+  display: inline-block;
+  outline: none;
   font-size: 16px;
   line-height: 32px;
   color: var(--color--purple);
+  transform: translateX(6px);
 }
 
 .events-card__link:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 3px;
@@ -495,7 +502,6 @@ a {
 }
 .events-card__link:focus::before {
   background-color: #fff;
-  /* color: #fff; */
 }
 
 @media (hover: hover) {
@@ -557,13 +563,13 @@ a {
 }
 
 .projects__link::before {
-  content: '';
-  display: block;
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  display: block;
 }
 
 .projects__item:focus-within {
@@ -643,12 +649,12 @@ a {
 
 .contacts__btn {
   padding: 10px 33px;
+  border: 2px solid var(--color--purple);
+  border-radius: 100px;
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
   color: var(--color--purple);
-  border: 2px solid var(--color--purple);
-  border-radius: 100px;
   transition: background-color 0.5s, color 0.5s;
 }
 
@@ -671,7 +677,7 @@ a {
   color: #fff;
 }
 
-.contacts-btn__text-hidden {
+.contacts__btn-hidden-text {
   display: none;
 }
 .contacts__subtitle {
@@ -690,11 +696,11 @@ a {
   line-height: 0;
 }
 
-.contacts-whatsapp__link {
+.contacts__link-whatsapp {
   color: var(--color--green);
 }
 
-.contacts-telegram__link {
+.contacts__link-telegram {
   color: var(--color--aqua);
 }
 
