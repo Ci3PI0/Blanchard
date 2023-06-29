@@ -72,11 +72,6 @@ img {
   max-width: 100%;
 }
 
-p {
-  margin: 0;
-  padding: 0;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -103,8 +98,9 @@ a {
   cursor: pointer;
 }
 
-.flex {
-  display: flex;
+.p-reset {
+  margin: 0;
+  padding: 0;
 }
 
 .section-title {
