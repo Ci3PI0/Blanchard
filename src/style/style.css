@@ -499,6 +499,7 @@ a {
   line-height: 32px;
   color: var(--color--purple);
   transform: translateX(6px);
+  transition: color 0.5s, background-color 0.5s;
 }
 
 .events-card__link:before {
@@ -509,6 +510,7 @@ a {
   width: 100%;
   height: 1px;
   background-color: var(--color--purple);
+  transition: color 0.5s, background-color 0.5s;
 }
 
 .events-card__link:focus {
@@ -525,6 +527,7 @@ a {
   }
   .events-card__link:hover::before {
     color: var(--color--dark-purple);
+    background-color: var(--color--dark-purple);
   }
 }
 
@@ -716,6 +719,7 @@ a {
 .contacts__link {
   font-size: 0;
   line-height: 0;
+  transition: opacity 0.5s;
 }
 
 .contacts__link-whatsapp {
