@@ -137,8 +137,12 @@
   .events__item:not(:last-child) {
     margin-bottom: 29px;
   }
+  .events__picture {
+    width: 100%;
+  }
 
   .events-card__img {
+    width: 100%;
     margin-bottom: 15px;
   }
   .events-card__content {

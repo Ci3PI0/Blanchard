@@ -50,6 +50,7 @@
 .page {
   margin: 0;
   padding: 0;
+  min-width: 320px;
 
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -127,6 +128,7 @@ a {
 }
 
 .header__top {
+  display: flex;
   margin-bottom: 6px;
   justify-content: space-between;
   align-items: center;
@@ -146,9 +148,16 @@ a {
   width: 18px;
   height: 18px;
 }
-
+.header__bottom {
+  display: flex;
+}
 .nav {
+  display: flex;
   overflow-x: scroll;
+}
+
+.nav__list {
+  display: flex;
 }
 
 .nav__item:not(:last-child) {
@@ -215,11 +224,13 @@ a {
 }
 
 .hero__container {
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .hero__content {
+  display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -301,6 +312,7 @@ a {
 }
 
 .gallery__wrapper {
+  display: flex;
   flex-direction: column;
   margin-bottom: 30px;
 }
@@ -373,6 +385,7 @@ a {
   color: var(--color--dark-pink);
 }
 .gallery__list {
+  display: flex;
   flex-direction: column;
   text-align: center;
 }
@@ -398,6 +411,7 @@ a {
 }
 
 .catalog__list {
+  display: flex;
   flex-direction: column;
 }
 .catalog__item:not(:last-child) {
@@ -434,7 +448,11 @@ a {
   margin-bottom: 11px;
 }
 .events__list {
+  display: flex;
   flex-direction: column;
+}
+.events__item {
+  display: flex;
 }
 .events__item:not(:last-child) {
   margin-bottom: 20px;
@@ -449,6 +467,7 @@ a {
   margin-bottom: 18px;
 }
 .events-card__content {
+  display: flex;
   flex-direction: column;
   align-items: baseline;
   padding: 0 18px 48px 23px;
@@ -542,9 +561,11 @@ a {
 }
 
 .projects__list {
+  display: flex;
   flex-direction: column;
 }
 .projects__item {
+  display: flex;
   position: relative;
   padding: 25px;
   min-height: 100px;
@@ -614,10 +635,12 @@ a {
   line-height: 19px;
 }
 .contacts__wrapper {
+  display: flex;
   flex-direction: column;
   width: 100%;
 }
 .contacts__form {
+  display: flex;
   margin-bottom: 20px;
   flex-direction: column;
   align-items: baseline;
@@ -688,6 +711,9 @@ a {
   line-height: 32px;
 }
 
+.contacts__list {
+  display: flex;
+}
 .contacts__item:not(:last-child) {
   margin-right: 20px;
 }
@@ -726,11 +752,13 @@ a {
   background-color: var(--color--black);
 }
 .footer__container {
+  display: flex;
   flex-direction: column-reverse;
   align-items: center;
 }
 
 .footer__list {
+  display: flex;
   margin-bottom: 11px;
 }
 .footer__item:not(:last-child) {
@@ -738,6 +766,7 @@ a {
 }
 .footer__link {
   color: var(--color--bright-gray-more);
+  transition: color 0.5s;
 }
 
 .footer__link:focus {
